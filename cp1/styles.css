@@ -1,0 +1,169 @@
+/*
+    Name: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: October 13th, 2024
+    This is the styles.css file for my "Exploring Edinburgh" project. 
+    It is a global stylesheet used across all pages to maintain a consistent look and feel.
+    It includes styles for the header and footer which are consistent for all pages.
+    It also imports two fonts from google and has been passed through the CSS redundancy checker.
+    It ensures that all pages are in themes of blue, white, black and grey.
+*/
+
+/* Import Montserrat and Tangerine fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+body {
+  line-height: 1.6;
+  background-attachment: fixed; /* Fix the background when scrolling */
+}
+
+body, header h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body, header h1, nav ul, footer p {
+  margin: 0;
+}
+
+body, nav ul {
+  padding: 0;
+}
+
+body, main {
+  background-color: rgba(255, 255, 255, 0.8); /* Fallback for transparency */
+}
+
+body, h2 {
+  color: #333;
+}
+
+header {
+  background-color: #002244;
+  padding: 20px 0;
+}
+
+header, footer {
+  color: white;
+}
+
+header, h2, figcaption, section.head p, article, footer {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-family: "Tangerine", cursive; /* Apply Tangerine font */
+  font-size: 2.8em;
+  margin-top: 2px;
+  color: #ffffffb3; 
+  font-style: italic; /* Apply italics */
+}
+
+/* Navigation Bar */
+nav {
+  display: inline-block; /* Make the nav only as wide as its content */
+  background-color: rgba(0, 34, 68, 0.8); 
+  border: 2px solid #ccc; /* Border around the nav container */
+}
+
+nav, nav ul li a {
+  padding: 10px 20px; /* Padding inside the buttons and around the nav container */
+}
+
+nav, nav ul li a, main, article, article img {
+  border-radius: 10px;
+}
+
+nav, section.head p {
+  margin: 0 auto; /* Center horizontally */
+}
+
+nav ul {
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul, div.row {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin on the last item */
+}
+
+nav ul li a {
+  color: black; /* Black text color */
+  background-color: #ffffff; /* White background for buttons */
+  transition: all 0.2s ease; /* Smooth transition for hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for 3D look */
+  position: relative;
+  border: 1px solid #ccc; /* Light border for 3D effect */
+}
+
+nav ul li a:hover {
+  background-color: #003366; /* Darker background on hover */
+}
+
+main {
+  padding: 20px;
+  max-width: 80%;
+  margin: 20px auto 40px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Darker Blue for figcaption and article headings */
+figcaption, article h3 {
+  color: #104e8b; 
+}
+
+div.row {
+  justify-content: space-evenly; /* Ensure proper spacing */
+  margin: 20px; /* Add space outside the row, separating it from other elements */
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.head p {
+  width: 75%; /* Limit the width of the paragraph to 75% */
+}
+
+article {
+  background-color: #add8e6; /* Light Blue */
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  max-width: 30%; /* Ensure each article takes up 30% of the row for aesthetics */
+  box-sizing: border-box; /* For a proper aesthetic */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+article img {
+  max-width: 100%;
+}
+
+article:hover {
+  background-color: #90c1df; /* Slightly darker blue for hover */
+}
+
+footer {
+  background-color: #104e8b; /* Darker Blue */
+  padding: 15px 0;
+}

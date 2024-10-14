@@ -1,0 +1,74 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 13th, 2024
+  This is the index-styles.css file for the homepage of my "Exploring Edinburgh" project.
+  It includes custom styles specifically for the homepage, such as the background image,
+  layout of the main image, the welcome section, and the aside. The page uses a color scheme 
+  and responsive design elements to create a welcoming introduction to Edinburgh.
+*/
+
+body {
+  /* Image Source: Edinburgh Guided Tours Blog Page (https://www.edinburghguidedtour.com/blog/the-history-of-edinburgh-castle/) */
+  background: url("images/edinburgh_castle.png") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+/* Main Image Figure Styling for this page */
+#main-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rounded edges for multiple elements */
+#main-image img, #main-image figcaption, section.welcome, aside {
+  border-radius: 10px; 
+}
+
+#main-image img {
+  max-width: 50%;
+  display: block;
+}
+
+/* Apply padding to multiple elements */
+section.welcome, aside {
+  padding: 20px;
+}
+
+/* Apply margin to multiple elements */
+section.welcome, aside {
+  margin: 10px;
+}
+
+section.welcome {
+  background-color: #001f54; /* Darker turquoise background for Welcome section */
+  width: 70%;
+}
+
+aside {
+  width: 30%;
+  background-color: #003366; /* Lighter turquoise background for Aside */
+}
+
+/* Shared Styles for Welcome Section and Aside Headings */
+section.welcome h2, aside h2 {
+  font-size: 1.8em;
+  color: #ffffff; /* White heading */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+/* Shared Text Colors */
+section.welcome, aside {
+  color: #fff; /* White text color for both sections */
+}
+
+/* Text Alignment */
+section.welcome, section.welcome h2 {
+  text-align: right; /* Right-align text and headings in the Welcome section */
+}
+
+aside, aside h2 {
+  text-align: left; /* Left-align text and headings in the Aside */
+}

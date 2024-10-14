@@ -1,0 +1,18 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 13th, 2024
+  This is the cafes-styles.css file for my "Exploring Edinburgh" project.
+  It helps assign an image for my page background and aligns paragraph texts
+  to the left for articles.
+*/
+
+body {
+  /* Image Source: (https://www.pocketwanderings.com/best-brunch-places-in-edinburgh/) */
+  background: url("images/laila.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+article p {
+  text-align: left;
+}

@@ -1,0 +1,13 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 13th, 2024
+  This is the nightlife-styles.css file for my "Exploring Edinburgh" project.
+  It helps assign an image for my page background.
+*/
+
+body {
+  /* Image Source: (https://foursquare.com/v/dropkick-murphys/4b7c6262f964a5202d902fe3) */
+  background: url("images/dropkicks.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+}

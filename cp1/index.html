@@ -1,0 +1,145 @@
+<!--
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 13th, 2024
+  This is the index.html page for my "Exploring Edinburgh" project.
+  It serves as the homepage and introduces visitors to the guide, offering 
+  insights into the best places to explore in Edinburgh and has links to the
+  other pages created for the project in the nav bar and in the articles.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Edinburgh - A Student's Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index-styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Exploring Edinburgh</h1>
+      <p>A student's guide to the city</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html" aria-label="Go to Home Page"> Home </a>
+          </li>
+          <li>
+            <a href="attractions.html" aria-label="Explore Attractions">
+              Attractions
+            </a>
+          </li>
+          <li>
+            <a href="cafes.html" aria-label="Discover Cafes & Restaurants">
+              Cafes & Restaurants
+            </a>
+          </li>
+          <li>
+            <a href="nightlife.html" aria-label="Discover Edinburgh Nightlife">
+              Nightlife
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact Us"> Contact Us </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Row 1 -->
+      <div class="row">
+        <!-- Welcome Section -->
+        <section class="welcome">
+          <h2 class="right-aligned">Welcome to Edinburgh</h2>
+          <p>
+            I am an international student studying at the University of
+            Edinburgh, and I have been living in this enchanting city for two
+            years. Edinburgh feels like it’s straight out of a fairytale, with
+            its stunning architecture, rich history, and vibrant culture. In my
+            time here, I’ve fallen in love with exploring the city’s hidden
+            gems, from cozy cafes and delicious restaurants to its many
+            lesser-known treasures. I hope this guide helps you experience the
+            magic of Edinburgh just as I have!
+          </p>
+        </section>
+        <!-- Fun Fact Aside -->
+        <aside>
+          <h2 class="left-aligned">Fun Fact!</h2>
+          <p>
+            If you think the Edinburgh Castle looks like it’s on top of a
+            volcano, you're right. Just another casual extinct volcano in the
+            city center!
+          </p>
+        </aside>
+      </div>
+      <!-- Main Image -->
+      <figure id="main-image">
+        <!-- Image Source: Edinburgh Guided Tours Blog Page (https://www.edinburghguidedtour.com/blog/the-history-of-edinburgh-castle/) -->
+        <img
+          src="images/edinburgh_castle.png"
+          alt="View of Edinburgh Castle with the Ross Fountain in front">
+        <figcaption>Edinburgh Castle and the Ross Fountain</figcaption>
+      </figure>
+      <!-- Top Things to Do Section - Row 2 -->
+      <section class="top-things">
+        <h2>Top Things to Do in Edinburgh</h2>
+        <div class="row">
+          <!-- Attractions Link -->
+          <!-- Will use JS to attach click event later for whole article -->
+          <article>
+            <a href="attractions.html"><h3>Attractions</h3></a>
+            <figure>
+              <!-- Image Source: (https://www.residenthotels.com/experience/arthurs-seat/) -->
+              <img src="images/arthurseat.jpeg" alt="Arthur's Seat">
+              <figcaption>Arthur's Seat</figcaption>
+            </figure>
+            <p>
+              Check out Edinburgh’s must-see spots — whether it’s hiking up
+              Arthur’s Seat, wandering down the Royal Mile, or discovering
+              hidden bookstores, there's always something cool to explore!
+            </p>
+          </article>
+          <!-- Cafes & Restaurants Link -->
+          <article>
+            <a href="cafes.html"><h3>Cafes & Restaurants</h3></a>
+            <figure>
+              <!-- Image Source: (https://halalfoodgastronomy.com/reviews/manchester/haute-dolci-manchester-intu-trafford-centre/) -->
+              <img
+                src="images/haute_dolci_food.png"
+                alt="Haute Dolci Waffles">
+              <figcaption>Waffles at Haute Dolci</figcaption>
+            </figure>
+            <p>
+              From cozy cafes to amazing Thai, Japanese, and Indian spots,
+              Edinburgh’s food scene is full of surprises — and don’t forget the
+              desserts!
+            </p>
+          </article>
+          <!-- Nightlife Link -->
+          <article>
+            <a href="nightlife.html"><h3>Nightlife</h3></a>
+            <figure>
+              <!-- Image Source: (https://foursquare.com/v/dropkick-murphys/4b7c6262f964a5202d902fe3) -->
+              <img src="images/dropkicks.jpg" alt="DropKicks Murphys">
+              <figcaption>Dropkicks Murphys</figcaption>
+            </figure>
+            <p>
+              Whether you're into lively pubs, chilled jazz bars, or energetic
+              clubs, Edinburgh’s nightlife has something for everyone — and all
+              kinds of crowds to match!
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Image Credits in Page Source</p>
+    </footer>
+  </body>
+</html>
