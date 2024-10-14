@@ -4,7 +4,7 @@
   Date: October 13th, 2024
   This is the cafes-styles.css file for my "Exploring Edinburgh" project.
   It helps assign an image for my page background and aligns paragraph texts
-  to the left for articles.
+  to the left for articles and deals with bold.
 */
 
 body {
@@ -15,4 +15,8 @@ body {
 
 article p {
   text-align: left;
+}
+
+.bold-text {
+  font-weight: bold;
 }
