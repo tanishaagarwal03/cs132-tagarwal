@@ -22,7 +22,7 @@ Building on CP1, Creative Project 2 (CP2) introduces JavaScript to enhance inter
 - **Dynamic Feedback**: Real-time feedback shows the number of visible items after applying filters, improving usability.
 
 ### Reflection and Design Iteration
-A reflection document (`cp2-reflection.pdf`) is included to document the development process, including design decisions, key challenges, and user feedback.
+A reflection document (`cp\x-reflection.pdf`) is included to document the development process, including design decisions, key challenges, and user feedback for every CP.
 
 ## Future Work
 Future homework assignments and projects will be added to this repository as the course progresses. Each directory will follow a similar structure, ensuring that all files necessary for each project or homework are clearly organized.
