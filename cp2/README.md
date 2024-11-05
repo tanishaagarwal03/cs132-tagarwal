@@ -31,8 +31,7 @@ This project, **Exploring Edinburgh**, is the second creative project (CP2) for 
 - **cafes-styles.css**: Custom styles for the Cafes & Restaurants page, integrating filter functionality.
 - **nightlife-styles.css**: Unique styles for the Nightlife page with category filters.
 - **contact-styles.css**: Contact page-specific styling, including form layout.
-- **wireframe.pdf**: Initial wireframes for planning and structuring each page's layout.
-- **dom-tree.pdf**: Updated DOM tree reflecting the new interactive elements.
+- **dom-tree.pdf**: Updated DOM tree reflecting additions for the new interactive elements.
 
 ## Semantic HTML
 This project continues to use **semantic HTML5** tags to maintain accessibility, improve SEO, and enhance the structure and readability of the code.
@@ -45,7 +44,7 @@ The JavaScript in this project enables the following key interactions:
 - **Form Feedback**: The Contact page forms provide instant feedback, preventing page refresh with `preventDefault()` and displaying a confirmation message for 30 seconds.
 
 ## Reflection Document
-The `reflection.pdf` file discusses the process of adding JavaScript interactivity, handling user feedback, and debugging. It also covers any challenges encountered, particularly with asynchronous JavaScript and DOM manipulation, as well as strategies for future improvements.
+The `cp2-reflection.pdf` file discusses the process of adding JavaScript interactivity, handling user feedback, and debugging. It also covers any challenges encountered, particularly with asynchronous JavaScript and DOM manipulation, as well as strategies for future improvements.
 
 ## Future Work and Improvements
 - **Additional Filtering Options**: Potential for filters by price range or family-friendly options.
