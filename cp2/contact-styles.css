@@ -1,0 +1,143 @@
+/*
+    Name: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: October 30th, 2024
+    This is the contact-styles.css file for my "Exploring Edinburgh" project.
+    It applies specific styles to the Contact Us page, focusing on the layout 
+    and design of the contact form and contact details section. 
+    The styles include color schemes, form elements, and background settings 
+    that match the overall theme of the website including a background image.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  /* Image Source: (https://www.tripadvisor.com/Attraction_Review-g186525-d190124-Reviews-Calton_Hill-Edinburgh_Scotland.html) */
+  background: url("images/calton_hill.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+main {
+  max-width: 60%; /* Set width to 60% of the page */
+}
+
+main, section, form {
+  padding: 20px;
+}
+
+main h2, main h3, section p, .response-message {
+  text-align: center; /* Center align the headings */
+}
+
+.contact-info a, label, main h2, main h3 {
+  color: #002244; /* Dark Navy Blue for headings */
+}
+
+/* Contact Details Section */
+section {
+  background-color: #add8e6; /* Light Blue background */
+  margin-bottom: 20px;
+}
+
+section, form {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+section p {
+  margin: 0 auto 20px; /* Center the paragraph horizontally and add bottom margin */
+}
+
+section p, .contact-info, .response-message {
+  width: 75%;
+}
+
+/* Contact Form */
+/* Styling for the contact info list */
+.contact-info {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0 20px; /* Center the list within the section */
+  text-align: left; /* Right-align the text within the list */
+}
+
+.contact-info.email, .contact-info .phone, #suggestion-type {
+  margin-bottom: 10px;
+}
+
+.contact-info.email, .contact-info .phone, label, input[type="submit"], #suggestion-type, #suggestion-type option, .response-message {
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: #ffffff; /* White form background */
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+input[type="text"], input[type="email"], textarea, input[type="submit"] {
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #003366; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"], #suggestion-type {
+    cursor: pointer;
+  }
+
+input[type="submit"]:hover {
+  background-color: #001a33; /* Slightly darker navy blue on hover */
+}
+
+.response-message, label {
+  display: block; 
+}
+
+.hidden {
+    display: none;
+}
+
+/* Suggestion Type Dropdown Styling */
+#suggestion-type {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0ff;
+  border: 2px solid #add8e6;
+}
+
+#suggestion-type, .response-message {
+  color: #003366;
+}
+
+/* Style for response messages */
+.response-message {
+  margin: 10px auto 15px; /* Center it horizontally with space above and below */
+  padding: 15px;
+  background-color: #e0f7fa;
+  font-weight: bold;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* shadow for 3D look */
+}

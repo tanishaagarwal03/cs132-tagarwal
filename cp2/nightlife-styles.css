@@ -1,0 +1,40 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 30th, 2024
+  This is the nightlife-styles.css file for my "Exploring Edinburgh" project.
+  It helps assign an image for my page background.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  /* Image Source: (https://foursquare.com/v/dropkick-murphys/4b7c6262f964a5202d902fe3) */
+  background: url("images/dropkicks.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+/* Dropdown container */
+#nightlife-filter {
+  font-family: "Montserrat", sans-serif; /* Change font */
+  font-size: 1.1em; /* Increase font size */
+  color: #333399; /* Text color */
+  background-color: #ffffff; /* Light background */
+  margin: 10px 0; /* Add space around the dropdown */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Change background and text color when focused */
+#nightlife-filter:focus {
+  border-color: #6666cc; /* Darker border color on focus */
+}
+
+#nightlife-filter:hover, #nightlife-filter:focus {
+  background-color: #e6e6ff; /* Different background on hover/focus */
+}
+
+/* Styling individual options */
+#nightlife-filter option {
+  font-size: 1em; /* Font size for options */
+}

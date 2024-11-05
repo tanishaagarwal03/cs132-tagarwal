@@ -1,0 +1,44 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: October 30th, 2024
+  This is the cafes-styles.css file for my "Exploring Edinburgh" project.
+  It helps assign an image for my page background and aligns paragraph texts
+  to the left for articles.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  /* Image Source: (https://www.pocketwanderings.com/best-brunch-places-in-edinburgh/) */
+  background: url("images/laila.jpg") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+article p {
+  text-align: left;
+}
+
+/* Dropdown container */
+#cuisine-filter {
+  font-size: 1.1em; /* Increase font size */
+  font-family: 'Montserrat', sans-serif; /* Change font */
+  color: #333399; /* Text color */
+  background-color: #ffffff; /* Light background */
+  margin: 10px 0; /* Add space around the dropdown */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#cuisine-filter:focus {
+  border-color: #6666cc; /* Darker border color on focus */
+}
+
+#cuisine-filter:hover, #cuisine-filter:focus {
+  background-color: #e6e6ff; /* Different background on hover/focus */
+}
+
+/* Styling individual options */
+#cuisine-filter option {
+  font-size: 1em; /* Font size for options */
+}

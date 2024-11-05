@@ -1,0 +1,246 @@
+/*
+    Name: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: October 31st, 2024
+    This is the styles.css file for my "Exploring Edinburgh" project. 
+    It is a global stylesheet used across all pages to maintain a consistent look and feel.
+    It includes styles for the header and footer which are consistent for all pages.
+    It also imports two fonts from google and has been passed through the CSS redundancy checker.
+    It ensures that all pages are in themes of blue, white, black and grey.
+*/
+
+/* Import Montserrat and Tangerine fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+body {
+  line-height: 1.6;
+  background-attachment: fixed; /* Fix the background when scrolling */
+}
+
+body, header h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body, header h1, nav ul, footer p, .card .card-back p {
+  margin: 0;
+}
+
+.click-prompt, .bold-text {
+  font-weight: bold;
+}
+
+body, nav ul {
+  padding: 0;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.8); /* Fallback for transparency */
+}
+
+body, html, header {
+  background-color: #002244;
+}
+
+body, h2 {
+  color: #333;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header, .card-back, footer {
+  color: white;
+}
+
+header, h2, figcaption, section.head p, article, footer {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 2.8em;
+  margin-top: 2px;
+  color: #ffffffb3;
+}
+
+.click-prompt, header p {
+  font-style: italic;
+}
+
+header p, .click-prompt {
+  font-family: "Tangerine", cursive; /* Apply Tangerine font */
+}
+
+/* Navigation Bar */
+nav {
+  display: inline-block; /* Make the nav only as wide as its content */
+  background-color: rgba(0, 34, 68, 0.8);
+  border: 2px solid #ccc; /* Border around the nav container */
+}
+
+nav, nav ul li a {
+  padding: 10px 20px; /* Padding inside the buttons and around the nav container */
+}
+
+nav, nav ul li a, main,article, article img, .card-front, .card-back {
+  border-radius: 10px;
+}
+
+nav, section.head p {
+  margin: 0 auto; /* Center horizontally */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul, .card-front, .card-back {
+  justify-content: center;
+}
+
+.card-front, .card-back, nav ul, div.row, div.welcome_row {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin on the last item */
+}
+
+nav ul li a {
+  color: black; /* Black text color */
+  background-color: #ffffff; /* White background for buttons */
+  transition: all 0.2s ease; /* Smooth transition for hover */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for 3D look */
+
+  border: 1px solid #ccc; /* Light border for 3D effect */
+}
+
+nav ul li a, .card {
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: #003366; /* Darker background on hover */
+}
+
+main {
+  padding: 20px;
+  max-width: 80%;
+  margin: 20px auto 40px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+figcaption, article h3, .click-prompt, .filter-feedback {
+  color: #104e8b; /* Darker Blue */
+}
+
+div.row {
+  flex-wrap: wrap; /* Allow articles to wrap */
+}
+
+div.welcome_row, div.row {
+  justify-content: space-evenly; /* Space out items evenly */
+  gap: 5px; /* Add some space between each article */
+}
+
+div.welcome_row, div.row, article {
+  margin: 10px;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.head p {
+  width: 75%; /* Limit the width of the paragraph to 75% */
+}
+
+article {
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; /* For a proper aesthetic */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  flex: 0 1 300px; /* Flex-grow, flex-shrink, and basis (sets the width to 300px) */
+  max-width: 300px; /* Ensure articles do not exceed 300px */
+}
+
+article img {
+  max-width: 100%;
+}
+
+article:hover, .card-front:hover {
+  background-color: #90c1df; /* Slightly darker blue for hover */
+}
+
+footer {
+  padding: 15px 0;
+}
+
+footer, .card-back {
+  background-color: #104e8b; /* Darker Blue */
+}
+
+.click-prompt {
+  font-size: 2rem;
+}
+
+/* Card Structure */
+/* Card Styling */
+.card {
+  height: 400px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.card-front, .card-back {
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Unless I did this, the Italian restaurants weren't flipping properly after being filtered */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+}
+
+.card-front, article {
+  background-color: #add8e6; /* Lighter Blue */
+}
+
+.card-back {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.9); /* Stronger shadow for 3D look */
+}
+
+.card .card-back p {
+  text-align: left;
+}
+
+.card-back, .card.flipped .card-front {
+  transform: rotateY(180deg); /* Flip to hide */
+}
+
+.card.flipped .card-back {
+  transform: rotateY(0deg); /* Show back */
+}
+
+.hidden {
+  display: none;
+}

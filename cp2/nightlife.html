@@ -1,0 +1,298 @@
+<!--
+    Name: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: October 31st, 2024
+    This is the nightlife.html page for my "Exploring Edinburgh" project. 
+    It highlights top nightlife spots in Edinburgh, including bars, clubs, and unique venues.
+    Using JS on this, now the cards/articles can be flipped as well.
+    Different bars and nightclubs can be filtered as well.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Edinburgh - Nightlife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nightlife-styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Exploring Edinburgh</h1>
+        <p>A student's guide to the city</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="cafes.html">Cafes & Restaurants</a></li>
+                <li><a href="nightlife.html">Nightlife</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="head">
+
+            <h2>Nightlife in Edinburgh</h2>
+
+            <p>
+                Edinburgh has a vibrant nightlife scene, offering everything from
+                traditional pubs to modern clubs and hidden cocktail bars. Here
+                are some must-visit spots to explore after dark (which happens pretty early in Edinburgh).
+                Remember the legal drinking age is 18 in the UK and you might have
+                to show your government ID.
+            </p>
+
+            <p class="click-prompt">click a box to know more!</p>
+
+            <label for="nightlife-filter">Filter by Nightlife Type:</label>
+
+            <select id="nightlife-filter">
+                <option value="all">All</option>
+                <option value="club">Club</option>
+                <option value="bar">Bar/Pub</option>
+            </select>
+
+            <!-- Dynamic Feedback Section -->
+            <div id="filter-feedback" class="filter-feedback"></div>
+
+            <div class="row">
+
+                <!-- Dropkick Murphys -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>Dropkick Murphys</h3>
+                        <figure>
+                            <!-- Image Source: (https://foursquare.com/v/dropkick-murphys/4b7c6262f964a5202d902fe3) -->
+                            <img src="images/dropkicks.jpg" alt="Dropkick Murphys">
+                            <figcaption>Dropkick Murphys</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A popular bar for both students and locals, Dropkick
+                            Murphys offers a lively atmosphere with great music
+                            and affordable drinks.
+                        </p>
+                        <p><span class="bold-text">Vibe:</span> Relaxed Irish bar atmosphere</p>
+                        <p><span class="bold-text">Special Features:</span> Affordable drinks, live sports</p>
+                        <p><span class="bold-text">Type:</span> Pub</p>
+                    </div>
+                </article>
+
+                <!-- Stramash -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>Stramash</h3>
+                        <figure>
+                            <!-- Image Source: https://www.oldtownpubco.com/our-bars/stramash-live-music-bar-edinburgh/ -->
+                            <img src="images/stramash.jpg" alt="Stramash">
+                            <figcaption>Stramash</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A lively venue for music lovers with live bands and an upbeat crowd.</p>
+                        <p><span class="bold-text">Vibe:</span> Energetic, live music focus</p>
+                        <p><span class="bold-text">Special Features:</span> Live band performances</p>
+                        <p><span class="bold-text">Type:</span> Bar and music venue</p>
+                    </div>
+                </article>
+
+                <!-- Why Not Nightclub -->
+                <article class="card" data-nlife="club">
+                    <div class="card-front">
+                        <h3>Why Not Nightclub</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.bibbymagic.co.uk/2016/04/not-nightclub-edinburgh/)-->
+                            <img src="images/why_not.png" alt="Why Not Nightclub">
+                            <figcaption>Why Not Nightclub</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>Trendy and modern nightclub with one of Edinburgh’s largest dance floors.</p>
+                        <p><span class="bold-text">Vibe:</span> Trendy and modern</p>
+                        <p><span class="bold-text">Special Features:</span> LED dance floor, outdoor terrace</p>
+                        <p><span class="bold-text">Type:</span> Club</p>
+                    </div>
+                </article>
+
+                <!-- Subway -->
+                <article class="card" data-nlife="club">
+                    <div class="card-front">
+                        <h3>Subway</h3>
+                        <figure>
+                            <!-- Image Source: (https://edinburgh.org/point-of-interest/subway-cowgate/)-->
+                            <img src="images/subway.png" alt="Subway Club">
+                            <figcaption>Subway Club</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>Student-friendly spot known for its affordable drinks and casual vibe.</p>
+                        <p><span class="bold-text">Vibe:</span> Student-friendly and casual</p>
+                        <p><span class="bold-text">Special Features:</span> Inexpensive drinks, lively atmosphere</p>
+                        <p><span class="bold-text">Type:</span> Club</p>
+                    </div>
+                </article>
+
+                <!-- Boteco Do Brasil -->
+                <article class="card" data-nlife="bar club">
+                    <div class="card-front">
+                        <h3>Boteco Do Brasil</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.botecodobrasiledinburgh.com)-->
+                            <img src="images/boteco.jpg" alt="Boteco Do Brasil">
+                            <figcaption>Boteco Do Brasil</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A lively Latin-themed bar known for its Brazilian drinks and dance nights.</p>
+                        <p><span class="bold-text">Vibe:</span> Lively with Latin music and decor</p>
+                        <p><span class="bold-text">Special Features:</span> Brazilian cocktails, dance nights</p>
+                        <p><span class="bold-text">Type:</span> Bar</p>
+                    </div>
+                </article>
+
+                <!-- The Three Sisters -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>The Three Sisters</h3>
+                        <figure>
+                            <!-- Image Source: "https://thethreesistersbar.co.uk/"-->
+                            <img src="images/threesisters.jpeg" alt="The Three Sisters">
+                            <figcaption>The Three Sisters</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A vibrant social spot popular for its outdoor courtyard and big screens.</p>
+                        <p><span class="bold-text">Vibe:</span> Lively and social</p>
+                        <p><span class="bold-text">Special Features:</span> Outdoor courtyard with screens</p>
+                        <p><span class="bold-text">Type:</span> Pub and event venue</p>
+                    </div>
+                </article>
+
+                <!-- The Hive -->
+                <article class="card" data-nlife="club">
+                    <div class="card-front">
+                        <h3>The Hive</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.edinburghlive.co.uk/best-in-edinburgh/edinburgh-nightclub-hive-reopening-fully-18835663)-->
+                            <img src="images/hive.png" alt="The Hive">
+                            <figcaption>The Hive</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>Casual club with affordable drinks, drawing in a strong student crowd.</p>
+                        <p><span class="bold-text">Vibe:</span> Casual, popular with students</p>
+                        <p><span class="bold-text">Special Features:</span> Affordable drinks and diverse music</p>
+                        <p><span class="bold-text">Type:</span> Club</p>
+                    </div>
+                </article>
+
+                <!-- Panda & Sons -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>Panda & Sons</h3>
+                        <figure>
+                            <!-- Image Source: https://www.tripadvisor.com/Attraction_Review-g186525-d6495729-Reviews-Panda_Sons-Edinburgh_Scotland.html -->
+                            <img src="images/panda-sons.jpg" alt="Panda & Sons Bar">
+                            <figcaption>Panda & Sons Bar</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A hidden, speakeasy-style cocktail bar with unique and creative drinks.</p>
+                        <p><span class="bold-text">Vibe:</span> Speakeasy-style with hidden door</p>
+                        <p><span class="bold-text">Signature Drink:</span> Creative cocktails with unique twists</p>
+                        <p><span class="bold-text">Type:</span> Cocktail bar</p>
+                    </div>
+                </article>
+
+                <!-- The Devil’s Advocate -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>The Devil’s Advocate</h3>
+                        <figure>
+                            <!-- Image Source: https://www.cntraveler.com/restaurants/edinburgh/the-devils-advocate-->
+                            <img src="images/devils_advocate.png" alt="The Devil's Advocate Bar">
+                            <figcaption>The Devil’s Advocate Bar</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>Stylish whiskey bar set in a historic location with a laid-back vibe.</p>
+                        <p><span class="bold-text">Vibe:</span> Trendy with a historic touch</p>
+                        <p><span class="bold-text">Signature Drink:</span> Whiskey-based cocktails</p>
+                        <p><span class="bold-text">Type:</span> Bar and whiskey lounge</p>
+                    </div>
+                </article>
+
+                <!-- Cabaret Voltaire -->
+                <article class="card" data-nlife="club">
+                    <div class="card-front">
+                        <h3>Cabaret Voltaire</h3>
+                        <figure>
+                            <!-- Image Source: https://www.thecabaretvoltaire.com-->
+                            <img src="images/cabaret_voltaire.jpg" alt="Cabaret Voltaire">
+                            <figcaption>Cabaret Voltaire</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>An underground club known for its techno and electronic music nights.</p>
+                        <p><span class="bold-text">Vibe:</span> Underground and edgy</p>
+                        <p><span class="bold-text">Popular Nights:</span> Electronic and techno music events</p>
+                        <p><span class="bold-text">Type:</span> Club and event space</p>
+                    </div>
+                </article>
+
+                <!-- Sneaky Pete's -->
+                <article class="card" data-nlife="bar">
+                    <div class="card-front">
+                        <h3>Sneaky Pete's</h3>
+                        <figure>
+                            <!-- Image Source: https://ra.co/clubs/13319 -->
+                            <img src="images/sneak-petes.jpg" alt="Sneaky Pete's">
+                            <figcaption>Sneaky Pete's</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A small, lively venue for indie, electronic, and rock music lovers.</p>
+                        <p><span class="bold-text">Vibe:</span> Intimate and edgy</p>
+                        <p><span class="bold-text">Popular Nights:</span> Indie, electronic, and rock music</p>
+                        <p><span class="bold-text">Type:</span> Live music bar and club</p>
+                    </div>
+                </article>
+
+                <!-- The Liquid Room -->
+                <article class="card" data-nlife="club">
+                    <div class="card-front">
+                        <h3>The Liquid Room</h3>
+                        <figure>
+                            <!-- Image Source: https://licklist.co.uk/the-liquid-rooms-edinburgh-->
+                            <img src="images/liquidroom.jpg" alt="The Liquid Room">
+                            <figcaption>The Liquid Room</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p>A bustling venue for dance floors and DJ nights in the city center.</p>
+                        <p><span class="bold-text">Vibe:</span> High-energy dance floors</p>
+                        <p><span class="bold-text">Popular Nights:</span> Live DJ sets and themed nights</p>
+                        <p><span class="bold-text">Type:</span> Nightclub and event space</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Image Credits in Page Source</p>
+    </footer>
+
+</body>
+
+</html>

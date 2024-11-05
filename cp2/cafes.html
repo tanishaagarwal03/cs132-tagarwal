@@ -1,0 +1,370 @@
+<!--
+    Name: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: November 4th, 2024
+    This is the cafes.html page for my "Exploring Edinburgh" project. 
+    It showcases some of my favorite cafes and restaurants in Edinburgh, 
+    including images, descriptions, and what makes each location unique.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Edinburgh - Cafes & Restaurants</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cafes-styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Exploring Edinburgh</h1>
+        <p>A student's guide to the city</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="cafes.html">Cafes & Restaurants</a></li>
+                <li><a href="nightlife.html">Nightlife</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section Title -->
+        <section class="head">
+            <h2>Indulge in Edinburgh Food Scenes</h2>
+
+            <p>
+                Edinburgh is so multicultural. You can find almost any cuisine here.
+                Many Indian restaurants are owned by Indians and are authentic. The
+                Thai and Japanese restaurants are amazing as well! I would also
+                recommend trying the various dessert shops all over the city!
+            </p>
+
+            <p class="click-prompt">click a box to know more!</p>
+
+            <!-- Filter Dropdown -->
+            <label for="cuisine-filter">Filter by Cuisine:</label>
+
+            <select id="cuisine-filter">
+                <option value="all">🍽️ All</option>
+                <option value="cafe">☕ Cafe</option>
+                <option value="dessert">🍰 Dessert</option>
+                <option value="mediterranean">🥙 Mediterranean</option>
+                <option value="japanese">🍣 Japanese</option>
+                <option value="indian">🍛 Indian</option>
+                <option value="middle-eastern">🍢 Middle Eastern</option>
+                <option value="italian">🍝 Italian</option>
+                <option value="scottish">🥧 Scottish Market</option>
+                <option value="thai">🍜 Thai</option>
+                <option value="british">🍖 Modern British</option>
+            </select>
+
+            <!-- Dynamic Feedback Section -->
+            <div id="filter-feedback" class="filter-feedback"></div>
+
+            <div class="row">
+                <!-- The Milkman -->
+                <article class="card" data-cuisine="cafe">
+                    <div class="card-front">
+                        <h3>The Milkman</h3>
+                        <figure>
+                            <!--Image Source: @the_shopkeepers on Instagram (https://www.instagram.com/p/CpASljss_Kp/)-->
+                            <img src="images/the_milkman.jpeg" alt="The Milkman Cafe">
+                            <figcaption>Cozy vibes at The Milkman</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Specialty coffee with fresh pastries</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Perfect for a quick pick-me-up in a cozy setting</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Cafe</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>8:00 am - 6:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Haute Dolci -->
+                <article class="card" data-cuisine="dessert brunch">
+                    <div class="card-front">
+                        <h3>Haute Dolci</h3>
+                        <figure>
+                            <!-- Image Source: (https://halalfoodgastronomy.com/reviews/manchester/haute-dolci-manchester-intu-trafford-centre/) -->
+                            <img src="images/haute_dolci_food.png" alt="Haute Dolci Waffles">
+                            <figcaption>Indulge in desserts at Haute Dolci</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Signature waffles with ice cream and toppings</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Perfect spot for dessert lovers with elegant plating</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Dessert</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>11:00 am - 11:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Laila Bar and Restaurant -->
+                <article class="card" data-cuisine="mediterranean dessert">
+                    <div class="card-front">
+                        <h3>Laila Bar and Restaurant</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.pocketwanderings.com/best-brunch-places-in-edinburgh/) -->
+                            <img src="images/laila.jpg" alt="Laila Bar and Restaurant">
+                            <figcaption>Fresh flavors at Laila's Bar and Restaurant</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Grilled halloumi with pomegranate seeds</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>A refreshing blend of Mediterranean flavors</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Mediterranean (good for a boozy brunch)</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>9:00 am - 10:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Maki & Ramen -->
+                <article class="card" data-cuisine="japanese">
+                    <div class="card-front">
+                        <h3>Maki & Ramen</h3>
+                        <figure>
+                            <!-- Image Source: (https://edinburgh.org/point-of-interest/maki-ramen/) -->
+                            <img src="images/maki_and_ramen.png" alt="Maki & Ramen">
+                            <figcaption>Find Japanese delicacies at Maki & Ramen</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Tonkotsu Ramen</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Comforting broth with rich, authentic Japanese flavors</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Japanese</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>11:30 am - 10:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Tuk Tuk -->
+                <article class="card" data-cuisine="indian">
+                    <div class="card-front">
+                        <h3>Tuk Tuk</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.tuktukindianstreetfood.com)-->
+                            <img src="images/tuk_tuk.jpeg" alt="Tuk Tuk Indian Street Food">
+                            <figcaption>Vibrant street food at Tuk Tuk</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Chicken lollipops with masala fries</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>A fun and vibrant twist on Indian street food</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Indian Street Food</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>12:00 pm - 10:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- BABA -->
+                <article class="card" data-cuisine="middle-eastern">
+                    <div class="card-front">
+                        <h3>BABA</h3>
+                        <figure>
+                            <!-- Image Source: (https://edinburgh.org/point-of-interest/baba-restaurant/)-->
+                            <img src="images/baba.jpeg" alt="Middle Eastern food at BABA">
+                            <figcaption>Middle Eastern flair at BABA</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Lamb shoulder with pomegranate and yogurt</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Bold flavors and vibrant atmosphere</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Middle Eastern</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>12:00 pm - 11:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Golden Ambal -->
+                <article class="card" data-cuisine="indian">
+                    <div class="card-front">
+                        <h3>Golden Ambal</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.yelp.co.uk/biz/golden-ambal-edinburgh)-->
+                            <img src="images/golden_ambal.jpg" alt="Golden Ambal Indian Restaurant">
+                            <figcaption>Authentic South Indian dishes at Golden Ambal</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Masala dosa and biryani</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Traditional Indian flavors</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Indian</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>11:30 am - 10:30 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- The Sicilian Pastry Shop -->
+                <article class="card" data-cuisine="dessert italian">
+                    <div class="card-front">
+                        <h3>The Sicilian Pastry Shop</h3>
+                        <figure>
+                            <!-- Image Source: (http://edinburghleithdailyphoto.blogspot.com/2012/04/franchinos.html)-->
+                            <img src="images/sicilianpastry.jpg" alt="The Sicilian Pastry Shop in Leith Walk">
+                            <figcaption>Authentic pastries at The Sicilian Pastry Shop</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Cannoli and ricotta-filled pastries</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>True taste of Sicily in Edinburgh</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Italian Patisserie</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>8:00 am - 5:00 pm, Mon-Sat</p>
+                    </div>
+                </article>
+
+                <!-- Civerinos -->
+                <article class="card" data-cuisine="italian">
+                    <div class="card-front">
+                        <h3>Civerinos</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.ionedinburgh.com/civerinos-slice-edinburghs-new-neighbourhood-pizza-bar/)-->
+                            <img src="images/civerinos.jpg" alt="Civerinos Italian Restaurant">
+                            <figcaption>Pizza and pasta at Civerinos</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Wood-fired pizzas</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Classic Italian comfort food</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Italian</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>12:00 pm - 10:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Bonnie & Wild -->
+                <article class="card" data-cuisine="scottish all">
+                    <div class="card-front">
+                        <h3>Bonnie & Wild</h3>
+                        <figure>
+                            <!-- Image Source: (https://bonnieandwildmarket.com/eat)-->
+                            <img src="images/bonnieandwild.jpg" alt="Bonnie & Wild Scottish Market">
+                            <figcaption>Scottish produce and cuisine at Bonnie & Wild</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Variety of Scottish dishes</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Great selection of local vendors</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Scottish Market</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>10:00 am - 8:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Duck & Waffle -->
+                <article class="card" data-cuisine="british">
+                    <div class="card-front">
+                        <h3>Duck & Waffle</h3>
+                        <figure>
+                            <!-- Image Source: (https://duckandwaffle.com/edinburgh/)-->
+                            <img src="images/duckandwaffle.jpg" alt="Duck & Waffle Edinburgh">
+                            <figcaption>Iconic views and creative dishes at Duck & Waffle</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Duck confit and waffle</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Unique combination of flavors</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Modern British</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>24/7</p>
+                    </div>
+                </article>
+
+                <!-- Ting Thai Caravan -->
+                <article class="card" data-cuisine="thai">
+                    <div class="card-front">
+                        <h3>Ting Thai Caravan</h3>
+                        <figure>
+                            <!-- Image Source: (https://pbs.twimg.com/media/FGpa_W5WUAEDG8v.png)-->
+                            <img src="images/tingthai.png" alt="Ting Thai Caravan">
+                            <figcaption>Authentic Thai street food at Ting Thai Caravan</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back" data-cuisine="thai">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Pad Thai and green curry</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Fast, flavorful, and authentic</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Thai</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>12:00 pm - 10:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+                <!-- Soi 38 -->
+                <article class="card" data-cuisine="thai">
+                    <div class="card-front">
+                        <h3>Soi 38</h3>
+                        <figure>
+                            <!-- Image Source: (https://www.ubereats.com/gb/store/soi-38-thai-street-food/YA93rty9XjupmRXDWP-H7Q)-->
+                            <img src="images/soi38.png" alt="Soi 38 Thai Restaurant">
+                            <figcaption>Vibrant Thai dishes at Soi 38</figcaption>
+                        </figure>
+                    </div>
+                    <div class="card-back">
+                        <p><span class="bold-text">Best Dish:</span></p>
+                        <p>Stir-fried noodles with tamarind sauce</p>
+                        <p><span class="bold-text">Why it’s good:</span></p>
+                        <p>Authentic Thai street-style dining</p>
+                        <p><span class="bold-text">Cuisine:</span></p>
+                        <p>Thai</p>
+                        <p><span class="bold-text">Open:</span></p>
+                        <p>12:00 pm - 11:00 pm, Mon-Sun</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Image Credits in Page Source</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: November 4th, 2024
+  This is the index-styles.css file for the homepage of my "Exploring Edinburgh" project.
+  It includes custom styles specifically for the homepage, such as the background image,
+  layout of the main image, the welcome section, and the aside. The page uses a color scheme 
+  and responsive design elements to create a welcoming introduction to Edinburgh.
+*/
+
+body {
+  /* Image Source: Edinburgh Guided Tours Blog Page (https://www.edinburghguidedtour.com/blog/the-history-of-edinburgh-castle/) */
+  background: url("images/edinburgh_castle.png") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire page */
+}
+
+#main-image, .carousel-images {
+    display: flex;
+}
+
+/* Main Image Figure Styling for this page */
+#main-image {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rounded edges for multiple elements */
+#main-image img, #main-image figcaption, section.welcome, aside {
+  border-radius: 10px;
+}
+
+#main-image img {
+  max-width: 50%;
+  display: block;
+}
+
+/* Apply padding to multiple elements */
+section.welcome, aside {
+  padding: 20px;
+  margin: 10px;
+  color: #fff; /* White text color for both sections */
+}
+
+section.welcome {
+  background-color: #001f54; /* Darker turquoise background for Welcome section */
+  width: 70%;
+}
+
+aside {
+  background-color: #003366; /* Lighter turquoise background for Aside */
+  width: 30%;
+}
+
+/* Shared Styles for Welcome Section and Aside Headings */
+section.welcome h2, aside h2 {
+  font-size: 1.8em;
+  color: #ffffff; /* White heading */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+/* Text Alignment */
+section.welcome, section.welcome h2 {
+  text-align: right; /* Right-align text and headings in the Welcome section */
+}
+
+aside, aside h2 {
+  text-align: left; /* Left-align text and headings in the Aside */
+}
+
+/* Carousel Container */
+.carousel-container {
+  overflow: hidden; /* Hide overflow to show only images within the container */
+}
+
+/* Image Wrapper */
+.carousel-images {
+  width: calc(100% * 3); /* Wide enough for duplicated images */
+}
+
+/* Individual Images */
+.carousel-images img {
+  height: 250px; /* Scale image to match container height */
+  margin-right: 10px; /* Spacing between images */
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
