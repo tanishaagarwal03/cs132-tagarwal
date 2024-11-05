@@ -5,17 +5,27 @@ This repository contains all the coursework for CS 132: Web Development, Fall 20
 
 ## Directory Structure
 - `cp1/` - Contains all files for Creative Project 1 (CP1), including HTML, CSS, and wireframes.
+- `cp2/` - Contains all files for Creative Project 2 (CP2), which expands on CP1 with JavaScript functionality.
 - `hwX/` - Homework assignments (to be added as we progress in the course).
 
 ## Creative Project 1 (CP1) - "Exploring Edinburgh"
-For CP1, the project focuses on creating a multi-page website titled **"Exploring Edinburgh"**, which highlights key attractions, cafes, restaurants, nightlife spots, and general tips for navigating the city of Edinburgh. The website is built using HTML and CSS, emphasizing good web design principles like responsiveness, accessibility and adhering to semantics.
+For CP1, the project focuses on creating a multi-page website titled **"Exploring Edinburgh"**, which highlights key attractions, cafes, restaurants, nightlife spots, and general tips for navigating the city of Edinburgh. The website is built using HTML and CSS, emphasizing good web design principles like responsiveness, accessibility, and semantic structure.
 
-### Wireframes:
-The directory `cp1/` also contains a PDF file named `wireframe.pdf` that outlines the visual structure and layout of each page before implementation. This was incredibly helpful when I was visualising the website and to finally implement it in HTML and CSS.
+### Wireframes
+The directory `cp1/` also contains a PDF file named `wireframe.pdf` that outlines the visual structure and layout of each page before implementation. This document was instrumental in visualizing the website structure and implementing it in HTML and CSS.
+
+## Creative Project 2 (CP2) - Enhanced "Exploring Edinburgh" with JavaScript Interactivity
+Building on CP1, Creative Project 2 (CP2) introduces JavaScript to enhance interactivity on the "Exploring Edinburgh" website. New features include:
+- **Card Flip Interactions**: Added to attractions, cafes, and nightlife pages, allowing users to click and view more details.
+- **Filtering Options**: Users can filter cafes and nightlife venues based on specific criteria such as type or cuisine.
+- **Image Carousel**: An automatic image slider displays featured images on the homepage for a dynamic experience.
+- **Dynamic Feedback**: Real-time feedback shows the number of visible items after applying filters, improving usability.
+
+### Reflection and Design Iteration
+A reflection document (`cp2-reflection.pdf`) is included to document the development process, including design decisions, key challenges, and user feedback.
 
 ## Future Work
 Future homework assignments and projects will be added to this repository as the course progresses. Each directory will follow a similar structure, ensuring that all files necessary for each project or homework are clearly organized.
 
 ## Submission and Testing
 All work is submitted through GitHub, and grading is done through CodePost. This repository will be used throughout the course for submission and testing.
-
