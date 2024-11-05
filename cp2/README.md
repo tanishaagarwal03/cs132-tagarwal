@@ -24,6 +24,8 @@ This project, **Exploring Edinburgh**, is the second creative project (CP2) for 
 ### JavaScript Files
 - **scripts/main.js**: Main JavaScript file implementing card flips, filtering functionality, homepage click events, and an image slider.
 - **scripts/contacts.js**: Manages interactivity for the contact and suggestion forms, handling form submission, display of confirmation messages, and form reset.
+- **cp2 javascript table.pdf**: A document detailing the JavaScript interactions in CP2, outlining each event type, triggered element, and corresponding action.
+
 
 ### CSS Files
 - **styles.css**: Global styles applied across all pages.
