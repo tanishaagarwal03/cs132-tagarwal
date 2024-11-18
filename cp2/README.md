@@ -3,6 +3,8 @@
 ## Project Overview
 This project, **Exploring Edinburgh**, is the second creative project (CP2) for CS 132: Web Development, Fall 2024. It expands on CP1 by introducing JavaScript interactivity to enhance user engagement and interactivity. The project continues to highlight Edinburgh's key attractions, cafes, restaurants, nightlife spots, and includes additional user-friendly features like card flipping, dynamic filtering, and a custom image slider.
 
+**Score**: 9/9
+
 ## Features
 ### New Interactive Features in CP2
 - **Card Flip Interactions**: Each card on the attractions, cafes, and nightlife pages can be clicked to flip, showing additional information on the reverse side.
