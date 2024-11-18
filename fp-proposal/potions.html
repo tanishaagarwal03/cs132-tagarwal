@@ -1,0 +1,230 @@
+<!--
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: November 17th, 2024
+
+  This page showcases a collection of 15 pre-made potions, each with unique names
+  and enchanting properties, displayed with images & brief descriptions.
+
+  Planned Features:
+  - Each product will dynamically fetch its details (e.g., ingredients, color, price, etc.)
+    using an API when clicked. This will redirect users to a detailed product page for the potion.
+  - An "Add to Cart" button will be added to each product. Clicking this button
+    will dynamically update the cart's contents and the cart icon displayed on all pages.
+  - A backend will manage product information, cart updates, and user preferences.
+  - The potion descriptions, prices, and other details will load dynamically
+    without refreshing the page, improving performance and user experience.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Brews - Pre-Made Potions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Potions for Every Mood, Spell, and Season</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Customer Service</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section Title -->
+        <section class="head">
+            <h2>Our Enchanted Collection</h2>
+            <p>
+                Discover our collection of pre-made potions, each crafted to perfection with magical ingredients
+                and infused with unique powers. Whether you're seeking bravery, love, or a dash of luck, we've got
+                the perfect potion for you!
+            </p>
+        </section>
+
+        <!-- Potion Rows -->
+        <div class="row">
+
+            <!--Image Source: All images below have been sourced from an Etsy website -->
+            <!-- Image Source: https://www.etsy.com/listing/1563245776/witch-potion-potion-decor-witchy-craft -->
+            <!-- All images were sourced and then edited by me -->
+
+            <!-- Potion 1: Potion of Amplified Courage -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-1.jpg" alt="Potion of Amplified Courage">
+                </figure>
+                <h3>Potion of Amplified Courage</h3>
+                <p>Enhances bravery already present within you, turning hesitation into boldness.</p>
+                <p>Side Effect: May make you overly reckless if overused.</p>
+            </article>
+
+            <!-- Potion 2: Essence of New Sight -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-2.jpg" alt="Essence of New Sight">
+                </figure>
+                <h3>Essence of New Sight</h3>
+                <p>Grants vision to the blind, whether from birth or injury.</p>
+                <p>Side Effect: May cause temporary headaches or dizziness.</p>
+            </article>
+
+            <!-- Potion 3: Potion of Undying Love -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-3.jpg" alt="Potion of Undying Love">
+                </figure>
+                <h3>Potion of Undying Love</h3>
+                <p>Infused with rose petals and enchanted whispers, this potion fills hearts with love. Creates
+                    love or infatuation where none existed before.</p>
+                <p>Side Effect: Highly addictive; once the effect fades, recipients may feel empty.</p>
+
+            </article>
+
+            <!-- Potion 4: Potion of Regrowth -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-4.jpg" alt="Potion of Regrowth">
+                </figure>
+                <h3>Potion of Regrowth</h3>
+                <p>Restores lost body parts like amputated limbs or damaged organs.</p>
+                <p>Side Effect: Causes temporary weakness.</p>
+            </article>
+
+            <!-- Potion 5: Potion of Plant Whispering -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-5.jpg" alt="Potion of Plant Whispering">
+                </figure>
+                <h3>Potion of Plant Whispering</h3>
+                <p>Creates a deep connection with plants, allowing you to sense their needs and communicate.</p>
+                <p>Side Effect: A strange craving for sunlight and water while under its influence.</p>
+            </article>
+
+            <!-- Potion 6: Potion of Vitality -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-6.jpg" alt="Potion of Vitality">
+                </figure>
+                <h3>Potion of Vitality</h3>
+                <p>Recharge your energy and feel rejuvenated with every sip.</p>
+                <p>Side Effect: Overuse may result in weakness when the effect wears off.</p>
+            </article>
+
+            <!-- Potion 7: Phoenix Elixir -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-7.jpg" alt="Phoenix Elixir">
+                </figure>
+                <h3>Phoenix Elixir</h3>
+                <p>Rise from the ashes stronger than ever with this flaming red potion. Infuses courage, boldness
+                    and rejuvination.</p>
+                <p>Caution: Only use in recommended doses - overuse may result in the opposite effect.</p>
+            </article>
+
+            <!-- Potion 8: Potion of Heightened Focus -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-8.jpg" alt="Potion of Heightened Focus">
+                </figure>
+                <h3>Potion of Heightened Focus</h3>
+                <p>Sharpen your concentration and clarity of thought for problem-solving or learning with this
+                    shimmering blue brew.</p>
+                <p>Side Effect: Temporary difficulty relaxing after use.</p>
+            </article>
+
+            <!-- Potion 9: Stardust Elixir -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-9.jpg" alt="Stardust Elixir">
+                </figure>
+                <h3>Stardust Elixir</h3>
+                <p>Unlock the mysteries of the universe with this celestial potion.</p>
+                <p>Side Effect: Knowledge remains only as long as the elixir is in effect.</p>
+            </article>
+
+            <!-- Potion 10: Potion of Joy -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-10.jpg" alt="Potion of Joy">
+                </figure>
+                <h3>Potion of Joy</h3>
+                <p>Spread happiness and laughter with this bubbly golden potion.</p>
+                <p>Side Effect: No side effects noted so far.</p>
+            </article>
+
+            <!-- Potion 11: Potion of Shadows -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-11.jpg" alt="Potion of Shadows">
+                </figure>
+                <h3>Potion of Shadows</h3>
+                <p>Embrace the unknown and master the art of stealth with this dark brew.</p>
+                <p>Caution: The effect wears off as the clock strikes dawn.</p>
+            </article>
+
+            <!-- Potion 12: Potion of Mimicry -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-12.jpg" alt="Potion of Mimicry">
+                </figure>
+                <h3>Potion of Mimicry</h3>
+                <p>Grants the ability to copy someone else’s voice or mannerisms flawlessly.</p>
+                <p>Side Effect: Difficulty remembering your original voice for 2 hours after effect wears off.</p>
+            </article>
+
+            <!-- Potion 13: Elixir of Time -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-15.jpg" alt="Elixir of Time">
+                </figure>
+                <h3>Elixir of Time</h3>
+                <p>Pause, rewind, or relive time with this ethereal blue potion.</p>
+                <p>Caution: Do not change the timeline - it can cause catastrophic disasters.</p>
+            </article>
+
+            <!-- Potion 14: Elixir of Radiant Charm -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-14.jpg" alt="Elixir of Radiant Charm">
+                </figure>
+                <h3>Elixir of Radiant Charm</h3>
+                <p>Enhances your natural charisma, making you more captivating and persuasive.</p>
+                <p>Side Effect: You may struggle to differentiate genuine affection from potion-induced allure.</p>
+            </article>
+
+            <!-- Potion 15: Essence of Feral Wrath -->
+            <article class="potion">
+                <figure>
+                    <img src="images/potion-13.jpg" alt="Essence of Feral Wrath">
+                </figure>
+                <h3>Essence of Feral Wrath</h3>
+                <p>Magnifies anger, making it a potent tool for battle or conflict.</p>
+                <p>Side Effect: Hard to calm down once the effects begin. Leads to extreme fatigue once effect wears
+                    off.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

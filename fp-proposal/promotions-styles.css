@@ -1,0 +1,5 @@
+body {
+  /* Image Source: https://img.freepik.com/premium-photo/snowy-christmas-market-germany-with-twinkling-lights_706399-3364.jpg */
+  background: url("images/christmas.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire page */
+}

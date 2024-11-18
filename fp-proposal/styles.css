@@ -1,0 +1,248 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: November 17th, 2024
+  This is the styles.css file for the homepage of my "Mystic Brews" project.
+  It includes custom styles to create a mystical and witchy aesthetic with shades
+  of purple and complementary colors. The page uses flexbox for responsive design
+  and hover effects to enhance interactivity.
+*/
+
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap");
+
+/* Apply fonts to specific elements */
+body, header p, nav ul li a, main, .welcome p, aside p, #main-image figcaption,
+article p, footer {
+  font-family: "Montserrat", sans-serif; /* Modern sans-serif font for body */
+}
+
+body, nav ul, header h1 {
+  margin: 0; /* Remove default margin for consistency */
+}
+
+body, nav ul {
+  padding: 0; /* Remove default padding */
+}
+
+/* General Styles */
+body {
+  line-height: 1.6; /* Set line height for better readability */
+  /* Image Source: https://pixabay.com/illustrations/search/magical%20place/ */
+  /* This is the general background, if diff needed for a page - new css page to be linked for that */
+  background: url("images/background-homepage.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensure the image covers the entire page */
+  color: #e6d9f3; /* Soft lavender text for readability */
+}
+
+header, footer {
+  background: #3c1e57; /* Deep purple for a mystical vibe */
+  padding: 1em 0; /* Add vertical padding */
+}
+
+header, nav ul li a, article h3, footer {
+  color: #fff; /* White text for contrast on dark background */
+}
+
+header, #main-image figcaption, .magic-links, footer, .head {
+  text-align: center; /* Center-align text for consistency */
+}
+
+/* Header */
+header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Shadow for depth */
+}
+
+header h1, aside p {
+  color: #d4a1ff; /* Light purple for emphasis */
+}
+
+header h1 {
+  font-size: 3.5em; /* Large font size for emphasis */
+}
+
+header h1, .magic-links h2 {
+  font-family: "Great Vibes", cursive; /* Elegant cursive font for heading */
+}
+
+header p {
+  padding-bottom: 10px; /* Add space below the text */
+  margin: 0.5em 0 0; /* Space above the text */
+}
+
+header p, #main-image figcaption {
+  color: #e8d7f1; /* Softer purple for a subtle touch */
+  font-style: italic; /* Add an italicized style */
+}
+
+header p, nav ul li a {
+  font-size: 1.2em; /* Slightly larger font size for better readability */
+}
+
+nav ul {
+  list-style: none;
+  background: #45266b; /* Rich purple for navbar background */
+  align-items: center; /* Vertically centers links */
+  padding: 0.5em 0; /* Consistent padding for nav bar */
+}
+
+nav ul, .row {
+  justify-content: center; /* Center align the items */
+}
+
+nav ul, .welcome_row, .row, .carousel-images {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1em; /* Add horizontal spacing between links */
+}
+
+a {
+  text-decoration: none; /* Remove default underline styling */
+}
+
+nav ul li a {
+  padding: 0.5em 1em; /* Add spacing inside the links */
+  border: 2px solid transparent; /* Border for hover effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+nav ul li a:hover {
+  background-color: #6c47a3; /* Brighter purple for hover */
+  color: #f8e6ff; /* Pale lavender for contrast */
+  border-color: #f8e6ff; /* Add a pale lavender border on hover */
+}
+
+main, .welcome, aside {
+  padding: 20px; /* Add spacing inside the sections */
+}
+
+main, .welcome, aside, .magic-links, article, article img {
+  border-radius: 10px; /* Smooth edges for a clean design */
+}
+
+main, .welcome, aside, #main-image img, article, article img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+/* Main Section */
+main {
+  width: 80%;
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 20px auto; /* Center the content */
+  background-color: rgba(60, 30, 87, 0.75); /* Deep purple with transparency */
+}
+
+/* Welcome Section */
+.welcome_row {
+  justify-content: space-between;
+  margin: 2em; /* Add space around the row */
+}
+
+.welcome_row, .row {
+  flex-wrap: wrap;
+}
+
+.welcome_row, aside {
+  flex: 1; /* Allow sections to grow evenly */
+}
+
+.welcome {
+  max-width: 60%; /* Limit the width for better readability */
+  margin-right: 1em; /* Add space on the right */
+  background-color: #4c2d63; /* Dusky purple */
+}
+
+.welcome h2, .welcome p {
+  text-align: right;
+}
+
+h2 {
+  color: #f3e4ff; /* Pale lavender for headings */
+}
+
+.welcome p, article p {
+  color: #e0c5f5; /* Soft lavender for body text */
+}
+
+aside {
+  max-width: 40%;
+  margin-left: 1em; /* Add space on the left */
+  background-color: #5a346d; /* Slightly darker purple for contrast */
+}
+
+aside h2, aside p {
+  text-align: left;
+}
+
+/* Main Image */
+#main-image img {
+  max-width: 50%;
+  display: block; /* Center-align the image */
+  margin: 0 auto; /* Add space around the image */
+  border-radius: 15px;
+}
+
+#main-image figcaption {
+  margin-top: 0.5em; /* Add space above the caption */
+}
+
+/* Articles Section */
+.magic-links {
+  padding: 2em; /* Add spacing around the section */
+  background-color: rgba(201, 160, 220, 0.55); /* Deep plum background with 85% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Stronger shadow for emphasis */
+}
+
+.magic-links h2 {
+  font-size: 3.5rem;
+}
+
+.row {
+  gap: 1.5em; /* Add space between items */
+  margin-top: 2em; /* Add space above the row */
+}
+
+article {
+  flex: 0 1 300px; /* Flex-grow, flex-shrink, and basis (sets the width to 300px) */
+  max-width: 300px; /* Ensure articles do not exceed 300px */
+  background: #4b0082; /* Dark purple */
+  padding: 1em; /* Add spacing inside the article */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+article:hover {
+  background-color: #8b5bbb; /* Lighter purple on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+article img {
+  max-width: 100%;
+}
+
+article h3 {
+  margin: 0.5em 0; /* Add spacing around headings */
+}
+
+/* Footer */
+footer {
+  border-top: 2px solid #6c47a3; /* Accent border */
+}
+
+/* Carousel Container */
+.carousel-container {
+  overflow: hidden; /* Hide overflow to show only images within the container */
+}
+
+/* Image Wrapper */
+.carousel-images {
+  width: calc(100% * 4); /* Wide enough for duplicated images */
+}
+
+.carousel-images img {
+  height: 250px; /* Scale image to match container height */
+  margin-right: 10px; /* Spacing between images */
+  box-shadow: 2px 2px 8px #8a8a8a;
+}

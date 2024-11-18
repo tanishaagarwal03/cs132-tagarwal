@@ -1,0 +1,205 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: November 17th, 2024
+  
+  This is the homepage for my "Mystic Brews" final project proposal.
+  The project represents an e-commerce website with a magical theme, inspired by witchcraft
+  and mystical potions. The page introduces visitors to the website's features, including:
+  - A carousel to showcase products.
+  - Sections highlighting available features like pre-made potions, holiday promotions, 
+    brewing custom potions, a quiz, and customer service.
+  - Dynamic elements like an interactive cart icon, which updates as users add items to cart.
+  Future Features:
+  - JavaScript and custom API integrations for dynamic functionality such as cart management, 
+    potion brewing, and personalized quiz results.
+  - Potential addition of animations and enhanced interactivity (e.g., bubbling cauldron).
+  - Full integration with backend services for real-time updates.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Brews - Unleash the Magic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Customer Service</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Row 1: Image Carousel -->
+
+        <!-- Image Source: All the individual potion images in this project have been sourced from the Etsy shops linked below -->
+        <!-- All the images were edited after being sourced by me as well. -->
+        <!-- Normal Potions: https://www.etsy.com/listing/1563245776/witch-potion-potion-decor-witchy-craft -->
+        <!-- Christmas Potions: https://www.etsy.com/ca/listing/1607228232/christmas-potions-watercolor-clipart-22 -->
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="images/potion-1.jpg" alt="Potion">
+                <img src="images/potion-2.jpg" alt="Potion">
+                <img src="images/potion-3.jpg" alt="Potion">
+                <img src="images/christmas-potion-1.jpg" alt="Potion">
+                <img src="images/potion-4.jpg" alt="Potion">
+                <img src="images/potion-5.jpg" alt="Potion">
+                <img src="images/potion-6.jpg" alt="Potion">
+                <img src="images/potion-7.jpg" alt="Potion">
+                <img src="images/christmas-potion-2.jpg" alt="Potion">
+                <img src="images/potion-8.jpg" alt="Potion">
+                <img src="images/potion-9.jpg" alt="Potion">
+                <img src="images/potion-10.jpg" alt="Potion">
+                <img src="images/potion-11.jpg" alt="Potion">
+                <img src="images/potion-12.jpg" alt="Potion">
+                <img src="images/christmas-potion-3.jpg" alt="Potion">
+                <img src="images/potion-13.jpg" alt="Potion">
+                <img src="images/potion-14.jpg" alt="Potion">
+                <img src="images/potion-15.jpg" alt="Potion">
+                <img src="images/christmas-potion-4.jpg" alt="Potion">
+                <img src="images/potion-16.jpg" alt="Potion">
+                <img src="images/potion-17.jpg" alt="Potion">
+                <img src="images/potion-18.jpg" alt="Potion">
+            </div>
+        </div>
+
+        <!-- Row 2: Welcome Section and Fun Fact -->
+        <div class="welcome_row">
+            <!-- Welcome Section -->
+            <section class="welcome">
+                <h2 class="right-aligned">Welcome to Mystic Brews</h2>
+                <p>
+                    Step into a realm where enchantment meets creativity! At Mystic Brews, we bring the world of magic
+                    to life with a dazzling array of potions and interactive features. Explore our collection of pre-made potions,
+                    each crafted to deliver unique magical effects—from courage and luck to love and tranquility. Feeling festive?
+                    Don't miss our limited-time holiday promotions, featuring exclusive potions like the Holly-Jolly Potion and
+                    Winter’s Calm Elixir.
+                </p>
+                <p>
+                    Want to unleash your inner alchemist? Dive into our "Brew Your Potion" section, where you can combine mystical
+                    ingredients to create your own spellbinding concoction. From magic lovers to aspiring witches and wizards, Mystic Brews
+                    offers something for everyone. Join us in a journey of wonder, discovery, and a little bit of magic!
+                </p>
+            </section>
+
+            <!-- Fun Fact Aside -->
+            <aside>
+                <h2 class="left-aligned">Did You Know?</h2>
+                <p>
+                    Potions date back to ancient alchemy, where witches and wizards used enchanted cauldrons to create
+                    spells for love, courage, and even invisibility!
+                </p>
+            </aside>
+        </div>
+
+        <!-- Row 3: Magical Sections -->
+        <section class="magic-links">
+
+            <h2>Discover the Magic</h2>
+
+            <div class="row">
+                <!-- Potions -->
+                <article>
+                    <a href="potions.html">
+                        <h3>Pre-Made Potions</h3>
+                    </a>
+                    <figure>
+                        <!-- Image Source: Sourced from https://www.etsy.com/listing/1563245776/witch-potion-potion-decor-witchy-craft and then edited as well-->
+                        <img src="images/potions.jpg" alt="Potions">
+                        <figcaption>Powerful Pre-Made Elixirs</figcaption>
+                    </figure>
+                    <p>
+                        Browse our collection of pre-made potions, each crafted with unique magical properties and
+                        enchanting colors.
+                    </p>
+                </article>
+
+                <!-- Promotions -->
+                <article>
+                    <a href="promotions.html">
+                        <h3>Festive Promotions</h3>
+                    </a>
+                    <figure>
+                        <!-- Image Source: https://www.etsy.com/ca/listing/1607228232/christmas-potions-watercolor-clipart-22-->
+                        <img src="images/christmas-potion-bundle.jpg" alt="Festive potion with holly">
+                        <figcaption>Limited-Time Festive Potions</figcaption>
+                    </figure>
+                    <p>
+                        Celebrate the holidays with our exclusive festive potions, including the Holly-Jolly Potion and
+                        Winter’s Calm Elixir.
+                    </p>
+                </article>
+
+                <!-- Brew Your Own Potion -->
+                <article>
+                    <a href="brew.html">
+                        <h3>Brew Your Potion</h3>
+                    </a>
+                    <figure>
+                        <!-- Image Source: https://www.freepik.com/photos/cooking-pot -->
+                        <img src="images/cauldron-brewing.jpg" alt="Bubbling cauldron with ingredients">
+                        <figcaption>Create Your Own Magical Brew</figcaption>
+                    </figure>
+                    <p>
+                        Combine mystical ingredients in our interactive potion maker to craft your very own spellbinding
+                        concoction.
+                    </p>
+                </article>
+
+                <!-- Quiz -->
+                <article>
+                    <a href="quiz.html">
+                        <h3>Take the Quiz</h3>
+                    </a>
+                    <figure>
+                        <!-- Image Source: https://wallpapers.com/the-hogwarts-potions-class -->
+                        <img src="images/potions-quiz.jpg" alt="Mystical symbols with glowing lights">
+                        <figcaption>Find Your Perfect House</figcaption>
+                    </figure>
+                    <p>
+                        Discover which Caltech house matches your personality or mood with our fun, interactive quiz based on potions you choose!
+                    </p>
+                </article>
+
+                <!-- Customer Service -->
+                <article>
+                    <a href="contact.html">
+                        <h3>Customer Service</h3>
+                    </a>
+                    <figure>
+                        <!-- Image Source: https://www.freepik.com/premium-ai-image/friendly-witches-gathered-around-bubbling-cauldron_328135170.htm -->
+                        <img src="images/customer-service.jpg" alt="Friendly witches around cauldron">
+                        <figcaption>Questions? We’ve Got Answers</figcaption>
+                    </figure>
+                    <p>
+                        Need help or have inquiries? Reach out to our enchanted customer service team for assistance.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>
