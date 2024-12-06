@@ -1,0 +1,74 @@
+<!-- 
+    Author: Tanisha Agarwal
+    CS 132 Fall 2024
+    Date: 5th December, 2024
+
+    This is the HTML file for my Unscramble Word Game project.
+    It defines the structure and layout of the game, including the menu,
+    game interface, and footer for citations.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Montserrat&display=swap" rel="stylesheet">
+    <script defer src="word-unscramble.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Unscramble the Word!</h1>
+    </header>
+
+    <main>
+
+        <div id="menu-view">
+            <button id="start-btn">Start</button>
+        </div>
+
+        <section id="game-view" class="hidden">
+
+            <div id="text">
+
+                <div id="word">
+                    <h3>Scrambled Word:</h3>
+                    <p id="scrambled-word"></p>
+                </div>
+
+                <h3>Unscramble here:</h3>
+
+                <input id="user-input" type="text" placeholder="Enter unscrambled word">
+
+                <p id="error-msg" class="hidden"></p>
+
+                <div id="buttons-container">
+                    <button id="submit-btn">Submit</button>
+                    <button id="skip-btn">Skip</button>
+                    <button id="stop-btn">Stop</button>
+                </div>
+
+                <div id="definition">
+                    <h3>Definition:</h3>
+                    <p id="defn-text"></p>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.dictionaryapi.com/products/api-school-dictionary">Dictionary API</a></li>
+            <li><a href="https://random-word-api.herokuapp.com">Random word API:</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

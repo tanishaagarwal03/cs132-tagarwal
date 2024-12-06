@@ -1,0 +1,126 @@
+/*
+ * Author: Tanisha Agarwal
+ * CS 132 Fall 2024
+ * Date: 5th December, 2024
+
+ * This is the styles.css file for my Unscramble Word Game project.
+ * It styles the game interface.
+*/
+
+body {
+    background-color: #f8d7e8; /* Baby pink background */
+    transition: background-color 1s ease; /* Smooth color transition */
+    padding: 0;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    flex-direction: column;
+}
+
+html, body, #buttons-container, main {
+    display: flex;
+}
+
+body, button {
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+
+header, #buttons-container {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+h3, #scrambled-word {
+    font-size: 24pt;
+}
+
+button {
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+input {
+    font-size: 12pt;
+    padding: 5px;
+}
+
+input, #error-msg {
+    margin-top: 10px;
+}
+
+body, input {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct-answer {
+    background-color: green;
+}
+
+#error-msg {
+    color: red;
+    font-size: 18pt;
+}
+
+#error-msg.visible {
+    visibility: visible;
+}
+
+#scrambled-word {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#defn-text {
+    font-size: 16pt;
+    margin-top: 15px;
+}
+
+main, #buttons-container {
+    flex-direction: row;
+    gap: 10px;
+}
+
+main, #buttons-container {
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #ff99cc; /* Slightly darker pink shade on hover */
+    transform: scale(1.05);
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#submit-btn, #stop-btn, #skip-btn {
+    width: 100px;
+}
+
+#text {
+    width: 600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    flex: 1; /* Allows main to grow and take available space */
+    align-items: center;
+}
