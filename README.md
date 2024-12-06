@@ -6,6 +6,7 @@ This repository contains all the coursework for CS 132: Web Development, Fall 20
 ## Directory Structure
 - `cp1/` - Contains all files for Creative Project 1 (CP1), including HTML, CSS, and wireframes.
 - `cp2/` - Contains all files for Creative Project 2 (CP2), which expands on CP1 with JavaScript functionality.
+- `cp3/` - Contains all files for Creative Project 3 (CP3), featuring an interactive Unscramble Word Game with APIs.
 - `hwX/` - Homework assignments (to be added as we progress in the course).
 - `final-project-proposal/` - Contains all files related to the Final Project Proposal (FPP), including HTML, CSS, JavaScript, images, and design documentation.
 
@@ -27,7 +28,26 @@ Building on CP1, Creative Project 2 (CP2) introduces JavaScript to enhance inter
 - **Dynamic Feedback**: Real-time feedback shows the number of visible items after applying filters, improving usability.
 
 ### Reflection and Design Iteration
-A reflection document (`cp\x-reflection.pdf`) is included to document the development process, including design decisions, key challenges, and user feedback for every CP.
+A reflection document (cp\x-reflection.pdf) is included to document the development process, including design decisions, key challenges, and user feedback for every CP.
+
+---
+
+## Creative Project 3 (CP3) - "Unscramble Word" Game with APIs
+For CP3, the project is an interactive **Unscramble Word Game** using HTML, CSS, and JavaScript. The game integrates the Random Word API and Merriam-Webster Dictionary API to fetch random words and their definitions. Players unscramble words based on the provided hints.
+
+### Features
+- **API Integration**: Fetches random words and definitions dynamically.
+- **Interactive Gameplay**: Players can submit guesses, skip words, or stop the game.
+- **Responsive Design**: Styled with CSS for consistent UI and usability across devices.
+- **Dynamic Feedback**: Real-time responses for correct and incorrect guesses.
+
+### Reflection
+The `cp3-written.pdf` includes insights on fetch operations, API handling, and ethical considerations in using third-party APIs.
+
+---
+
+### Reflection and Design Iteration
+A reflection document (`cp\x-reflection.pdf`) is included to document the development process, including design decisions, key challenges, and user feedback for mostly every CP.
 
 ---
 
