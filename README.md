@@ -1,13 +1,12 @@
 # CS 132 - Web Development Projects
 
 ## Overview
-This repository contains all the coursework for CS 132: Web Development, Fall 2024. The projects and homework assignments in this repository focus on building skills in HTML, CSS, and JavaScript, leading up to full-stack development. Each directory in this repository is dedicated to a specific Creative Project (CP), Homework (HW), or the Final Project Proposal (FPP), and includes all related files such as HTML, CSS, JavaScript, and any necessary assets.
+This repository contains all the coursework for CS 132: Web Development, Fall 2024. The projects in this repository focus on building skills in HTML, CSS, and JavaScript, leading up to full-stack development. Each directory in this repository is dedicated to a specific Creative Project (CP) or the Final Project Proposal (FPP), and includes all related files such as HTML, CSS, JavaScript, and any necessary assets.
 
 ## Directory Structure
 - `cp1/` - Contains all files for Creative Project 1 (CP1), including HTML, CSS, and wireframes.
 - `cp2/` - Contains all files for Creative Project 2 (CP2), which expands on CP1 with JavaScript functionality.
 - `cp3/` - Contains all files for Creative Project 3 (CP3), featuring an interactive Unscramble Word Game with APIs.
-- `hwX/` - Homework assignments (to be added as we progress in the course).
 - `final-project-proposal/` - Contains all files related to the Final Project Proposal (FPP), including HTML, CSS, JavaScript, images, and design documentation.
 
 ---
@@ -63,7 +62,7 @@ The Final Project Proposal focuses on building an interactive **e-commerce websi
 ---
 
 ## Future Work
-Future homework assignments and projects will be added to this repository as the course progresses. Each directory will follow a similar structure, ensuring that all files necessary for each project or homework are clearly organized. The Final Project implementation will build on the proposal files to include complete front-end and back-end functionality.
+Future projects will be added to this repository as the course progresses. Each directory will follow a similar structure, ensuring that all files necessary for each project are clearly organized. The Final Project implementation will build on the proposal files to include complete front-end and back-end functionality.
 
 ---
 
