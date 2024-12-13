@@ -1,0 +1,356 @@
+[
+    {
+        "id": 1,
+        "name": "Dragon Blood",
+        "price": 5.0,
+        "quantity": 100
+    },
+    {
+        "id": 2,
+        "name": "Phoenix Feather",
+        "price": 10.0,
+        "quantity": 50
+    },
+    {
+        "id": 3,
+        "name": "Sun's Rays",
+        "price": 3.0,
+        "quantity": 200
+    },
+    {
+        "id": 4,
+        "name": "Eye of Newt",
+        "price": 2.0,
+        "quantity": 150
+    },
+    {
+        "id": 5,
+        "name": "Wolfsbane",
+        "price": 4.0,
+        "quantity": 120
+    },
+    {
+        "id": 6,
+        "name": "Moonshine",
+        "price": 6.0,
+        "quantity": 80
+    },
+    {
+        "id": 7,
+        "name": "Rose Petals",
+        "price": 1.5,
+        "quantity": 300
+    },
+    {
+        "id": 8,
+        "name": "Enchanted Whispers",
+        "price": 5.0,
+        "quantity": 60
+    },
+    {
+        "id": 9,
+        "name": "Dragon's Blood",
+        "price": 5.0,
+        "quantity": 90
+    },
+    {
+        "id": 10,
+        "name": "Unicorn Hair",
+        "price": 8.0,
+        "quantity": 40
+    },
+    {
+        "id": 11,
+        "name": "Elven Leaves",
+        "price": 2.5,
+        "quantity": 110
+    },
+    {
+        "id": 12,
+        "name": "Dragon Tooth",
+        "price": 7.0,
+        "quantity": 70
+    },
+    {
+        "id": 13,
+        "name": "Phoenix Tail",
+        "price": 9.0,
+        "quantity": 30
+    },
+    {
+        "id": 14,
+        "name": "Mandrake Root",
+        "price": 3.5,
+        "quantity": 180
+    },
+    {
+        "id": 15,
+        "name": "Pixie Dust",
+        "price": 4.5,
+        "quantity": 140
+    },
+    {
+        "id": 16,
+        "name": "Ginseng Root",
+        "price": 2.5,
+        "quantity": 160
+    },
+    {
+        "id": 17,
+        "name": "Fairy Nectar",
+        "price": 3.0,
+        "quantity": 130
+    },
+    {
+        "id": 18,
+        "name": "Fire Blossom",
+        "price": 5.5,
+        "quantity": 90
+    },
+    {
+        "id": 19,
+        "name": "Sapphire Dust",
+        "price": 4.0,
+        "quantity": 100
+    },
+    {
+        "id": 20,
+        "name": "Lotus Petals",
+        "price": 3.0,
+        "quantity": 220
+    },
+    {
+        "id": 21,
+        "name": "Stardust",
+        "price": 6.0,
+        "quantity": 50
+    },
+    {
+        "id": 22,
+        "name": "Lunar Essence",
+        "price": 5.0,
+        "quantity": 60
+    },
+    {
+        "id": 23,
+        "name": "Sparks of Flame",
+        "price": 2.5,
+        "quantity": 150
+    },
+    {
+        "id": 24,
+        "name": "Obsidian Shard",
+        "price": 4.0,
+        "quantity": 70
+    },
+    {
+        "id": 25,
+        "name": "Nightshade",
+        "price": 3.0,
+        "quantity": 80
+    },
+    {
+        "id": 26,
+        "name": "Jaguar Nail",
+        "price": 4.5,
+        "quantity": 60
+    },
+    {
+        "id": 27,
+        "name": "Bat Nail Clipping",
+        "price": 1.0,
+        "quantity": 250
+    },
+    {
+        "id": 28,
+        "name": "Lemon Zest",
+        "price": 1.0,
+        "quantity": 200
+    },
+    {
+        "id": 29,
+        "name": "Honeydew Essence",
+        "price": 2.0,
+        "quantity": 170
+    },
+    {
+        "id": 30,
+        "name": "Unicorn Shine",
+        "price": 3.0,
+        "quantity": 90
+    },
+    {
+        "id": 31,
+        "name": "Sunshine",
+        "price": 4.0,
+        "quantity": 80
+    },
+    {
+        "id": 32,
+        "name": "Mirror Fragment",
+        "price": 7.0,
+        "quantity": 50
+    },
+    {
+        "id": 33,
+        "name": "Changeling Root",
+        "price": 5.0,
+        "quantity": 70
+    },
+    {
+        "id": 34,
+        "name": "Orchid Petal",
+        "price": 1.5,
+        "quantity": 200
+    },
+    {
+        "id": 35,
+        "name": "Beast's Claw",
+        "price": 6.0,
+        "quantity": 60
+    },
+    {
+        "id": 36,
+        "name": "Bloodroot",
+        "price": 2.5,
+        "quantity": 130
+    },
+    {
+        "id": 37,
+        "name": "Lion Blood",
+        "price": 4.0,
+        "quantity": 90
+    },
+    {
+        "id": 38,
+        "name": "Iron",
+        "price": 1.0,
+        "quantity": 300
+    },
+    {
+        "id": 39,
+        "name": "Red Rose",
+        "price": 1.0,
+        "quantity": 250
+    },
+    {
+        "id": 40,
+        "name": "Charisma Petals",
+        "price": 5.0,
+        "quantity": 70
+    },
+    {
+        "id": 41,
+        "name": "Rain Drops",
+        "price": 0.5,
+        "quantity": 500
+    },
+    {
+        "id": 42,
+        "name": "Temporal Crystal",
+        "price": 10.0,
+        "quantity": 20
+    },
+    {
+        "id": 43,
+        "name": "Chrono Sap",
+        "price": 8.0,
+        "quantity": 30
+    },
+    {
+        "id": 44,
+        "name": "Holly Leaves",
+        "price": 1.0,
+        "quantity": 300
+    },
+    {
+        "id": 45,
+        "name": "Evergreen Essence",
+        "price": 2.0,
+        "quantity": 200
+    },
+    {
+        "id": 46,
+        "name": "Cinnamon Spark",
+        "price": 1.5,
+        "quantity": 300
+    },
+    {
+        "id": 47,
+        "name": "Cherries",
+        "price": 0.5,
+        "quantity": 300
+    },
+    {
+        "id": 48,
+        "name": "Snow Essence",
+        "price": 2.5,
+        "quantity": 150
+    },
+    {
+        "id": 49,
+        "name": "Frosted Petals",
+        "price": 3.0,
+        "quantity": 200
+    },
+    {
+        "id": 50,
+        "name": "Winter Mint",
+        "price": 1.0,
+        "quantity": 300
+    },
+    {
+        "id": 51,
+        "name": "Golden Sprinkles",
+        "price": 1.5,
+        "quantity": 250
+    },
+    {
+        "id": 52,
+        "name": "Joy Extract",
+        "price": 2.0,
+        "quantity": 200
+    },
+    {
+        "id": 53,
+        "name": "Sounds of Children Laughing",
+        "price": 0.0,
+        "quantity": 100
+    },
+    {
+        "id": 54,
+        "name": "Cocoa Essence",
+        "price": 2.0,
+        "quantity": 150
+    },
+    {
+        "id": 55,
+        "name": "Mini Marshmallows",
+        "price": 1.0,
+        "quantity": 300
+    },
+    {
+        "id": 56,
+        "name": "Vanilla Cream",
+        "price": 1.0,
+        "quantity": 200
+    },
+    {
+        "id": 57,
+        "name": "Chantilly Cream Essence",
+        "price": 1.0,
+        "quantity": 200
+    },
+    {
+        "id": 58,
+        "name": "Vanilla Essence",
+        "price": 1.0,
+        "quantity": 250
+    },
+    {
+        "id": 59,
+        "name": "Snowflakes",
+        "price": 0.5,
+        "quantity": 400
+    }
+]
