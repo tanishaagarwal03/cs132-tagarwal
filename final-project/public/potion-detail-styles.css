@@ -1,0 +1,51 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: December 14th, 2024
+  Styles for single potion page
+*/
+
+.potion-detail {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.potion-detail img, #message {
+  border-radius: 8px;
+}
+
+.potion-detail .content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.potion-detail img {
+  max-width: 300px;
+}
+
+.potion-detail, .potion-detail img {
+  border: 2px solid #6c47a3; /* use a purple border for consistency */
+}
+
+/* Message Boxes (Success/Error)*/
+#message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.message.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+}
+
+.message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 2px solid #f5c6cb;
+}

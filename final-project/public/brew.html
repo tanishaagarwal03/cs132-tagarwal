@@ -1,0 +1,96 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14, 2024
+
+  This is the "Brew Your Potion" page of the "Mystic Brews" project.
+  The page allows users to create their own custom potions by selecting a name, colour, and magical ingredients.
+  Key Features:
+  - A form for users to specify potion name and colour.
+  - A dropdown list of ingredients populated dynamically using JavaScript.
+  - Real-time total price calculation based on selected ingredients.
+  - Error messages for missing or invalid inputs.
+  
+  Future Features:
+  - Enhanced visuals for ingredient selection (e.g., drag and drop).
+  - More dynamic interactivity, such as bubbling effects while brewing.
+  - Option to save favorite recipes to a user profile (requires backend support).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Your Potion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="brew-styles.css">
+    <script defer src="scripts/brew.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Row 1: Introduction Section -->
+        <section class="head">
+            <h2>Custom Potion Brewer</h2>
+            <p>Select ingredients and brew your unique potion!</p>
+        </section>
+
+        <!-- Row 2: Potion Form -->
+        <form id="brew-form">
+            <!-- Name Input -->
+            <label>Name: <input type="text" name="name" required></label>
+            <br>
+
+            <!-- Colour Input -->
+            <label>Colour: <input type="text" name="colour" required></label>
+            <br>
+
+            <!-- Ingredients Selection -->
+            <div class="form-group">
+                <label>Ingredients (select multiple):
+                    <select id="ingredients-select">
+                        <!-- Populated by JavaScript -->
+                    </select>
+                </label>
+                <button type="button" id="add-ingredient-btn">Add Ingredient</button> <!-- Button to add ingredient -->
+                <p class="error-message" id="ingredient-error"></p> <!-- Error message placeholder -->
+            </div>
+
+            <!-- Selected Ingredients -->
+            <div id="selected-ingredients">
+                <h3>Selected Ingredients</h3>
+                <ul id="ingredient-list"></ul> <!-- List of selected ingredients -->
+            </div>
+
+            <!-- Total Price Display -->
+            <p>Total Price: <span id="total-price">0.00</span> leprachauns</p>
+
+            <!-- Submit Button -->
+            <button type="submit">Make Potion</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

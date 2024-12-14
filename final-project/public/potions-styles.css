@@ -1,0 +1,12 @@
+/*
+  Name: Tanisha Agarwal
+  CS 132 Fall 2024
+  Date: December 14th, 2024
+  Styles for Potions page
+*/
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

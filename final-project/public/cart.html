@@ -1,0 +1,71 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14th, 2024
+
+  Description:
+  This is the "Cart" page for the Mystic Brews e-commerce project. 
+  It dynamically displays the items added to the user's cart, fetched from localStorage.
+  The page provides users the ability to:
+  - View their selected potions, including custom and pre-made items.
+  - Remove individual items or adjust quantities for potions with multiple units.
+  - Proceed to checkout using a button that sends the cart data to the backend API for processing.
+
+  Features:
+  - Dynamically populated cart items displayed as styled articles.
+  - Interactive remove button for each cart item.
+  - A checkout button that processes the cart and clears it upon successful checkout.
+  - Response messages displayed dynamically after checkout, indicating success or errors.
+
+  Future Enhancements:
+  - Add animations for item removal or checkout success messages.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart-styles.css">
+    <script defer src="scripts/cart.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="no-shadow">
+        <h2>Your Items</h2>
+
+        <!-- Container where cart items will be dynamically populated -->
+        <div id="cart-container"></div>
+
+        <!-- Checkout Button -->
+        <button id="checkout-btn">Checkout</button>
+
+        <!-- Placeholder for displaying the checkout response -->
+        <div id="checkout-response"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

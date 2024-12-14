@@ -1,0 +1,166 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14th, 2024
+  
+  This is the homepage for my "Mystic Brews" final project.
+  The project represents an e-commerce website with a magical theme, inspired by witchcraft
+  and mystical potions. The page introduces visitors to the website's features, including:
+  - A carousel to showcase products.
+  - Sections highlighting available features like pre-made potions, limited edition promotions and brewing custom potions.
+
+  Future Features:
+  - JavaScript and custom API integrations for dynamic functionality such as dynamic cart updates visible on homepage, 
+    a personalised quiz section, customer service section, FAQ section.
+  - Potential addition of animations and enhanced interactivity (e.g., bubbling cauldron).
+  - Full integration with backend services for real-time updates with the image carousel.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Brews - Unleash the Magic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts/main.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Row 1: Image Carousel -->
+
+        <!-- Image Source: All the individual potion images in this project have been sourced from the Etsy shops linked below -->
+        <!-- All the images were edited after being sourced by me as well. -->
+        <!-- Normal Potions: https://www.etsy.com/listing/1563245776/witch-potion-potion-decor-witchy-craft -->
+        <!-- Christmas Potions: https://www.etsy.com/ca/listing/1607228232/christmas-potions-watercolor-clipart-22 -->
+        <div class="carousel-container">
+            <div class="carousel-images">
+                <img src="images/potion-1.jpg" alt="Potion">
+                <img src="images/potion-2.jpg" alt="Potion">
+                <img src="images/potion-3.jpg" alt="Potion">
+                <img src="images/christmas-potion-1.jpg" alt="Potion">
+                <img src="images/potion-4.jpg" alt="Potion">
+                <img src="images/potion-5.jpg" alt="Potion">
+                <img src="images/potion-6.jpg" alt="Potion">
+                <img src="images/potion-7.jpg" alt="Potion">
+                <img src="images/christmas-potion-2.jpg" alt="Potion">
+                <img src="images/potion-8.jpg" alt="Potion">
+                <img src="images/potion-9.jpg" alt="Potion">
+                <img src="images/potion-10.jpg" alt="Potion">
+                <img src="images/potion-11.jpg" alt="Potion">
+                <img src="images/potion-12.jpg" alt="Potion">
+                <img src="images/christmas-potion-3.jpg" alt="Potion">
+                <img src="images/potion-13.jpg" alt="Potion">
+                <img src="images/potion-14.jpg" alt="Potion">
+                <img src="images/potion-15.jpg" alt="Potion">
+                <img src="images/christmas-potion-4.jpg" alt="Potion">
+                <img src="images/potion-16.jpg" alt="Potion">
+                <img src="images/potion-17.jpg" alt="Potion">
+                <img src="images/potion-18.jpg" alt="Potion">
+            </div>
+        </div>
+
+        <!-- Row 2: Welcome Section and Fun Fact -->
+        <div class="welcome_row">
+            <!-- Welcome Section -->
+            <section class="welcome">
+                <h2 class="right-aligned">Welcome to Mystic Brews</h2>
+                <p>
+                    Step into a realm where enchantment meets creativity! At Mystic Brews, we bring the world of magic
+                    to life with a dazzling array of potions and interactive features. Explore our collection of pre-made potions,
+                    each crafted to deliver unique magical effects—from courage and luck to love and tranquility. Feeling festive?
+                    Don't miss our limited-time holiday promotions, featuring exclusive potions like the Holly-Jolly Potion and
+                    Winter’s Calm Elixir.
+                </p>
+                <p>
+                    Want to unleash your inner alchemist? Dive into our "Brew Your Potion" section, where you can combine mystical
+                    ingredients to create your own spellbinding concoction. From magic lovers to aspiring witches and wizards, Mystic Brews
+                    offers something for everyone. Join us in a journey of wonder, discovery, and a little bit of magic!
+                </p>
+            </section>
+
+            <!-- Fun Fact Aside -->
+            <aside>
+                <h2 class="left-aligned">Did You Know?</h2>
+                <p>
+                    Potions date back to ancient alchemy, where witches and wizards used enchanted cauldrons to create
+                    spells for love, courage, and even invisibility!
+                </p>
+            </aside>
+        </div>
+
+        <!-- Row 3: Magical Sections -->
+        <section class="magic-links">
+
+            <h2>Discover the Magic</h2>
+
+            <div class="row">
+                <!-- Potions -->
+                <article>
+                    <h3><a href="potions.html">Pre-Made Potions</a></h3>
+                    <figure>
+                        <!-- Image Source: Sourced from https://www.etsy.com/listing/1563245776/witch-potion-potion-decor-witchy-craft and then edited as well-->
+                        <img src="images/potions.jpg" alt="Potions">
+                        <figcaption>Powerful Pre-Made Elixirs</figcaption>
+                    </figure>
+                    <p>
+                        Browse our collection of pre-made potions, each crafted with unique magical properties and
+                        enchanting colors.
+                    </p>
+                </article>
+
+                <!-- Limited Edition Potions -->
+                <article>
+                    <h3><a href="limited-edition.html">Limited Edition Potions!</a></h3>
+                    <figure>
+                        <!-- Image Source: https://www.etsy.com/ca/listing/1607228232/christmas-potions-watercolor-clipart-22-->
+                        <img src="images/christmas-potion-bundle.jpg" alt="Festive potion with holly">
+                        <figcaption>Limited-Time Festive Potions</figcaption>
+                    </figure>
+                    <p>
+                        Celebrate the holidays with our exclusive festive potions, including the Holly-Jolly Potion and
+                        Winter’s Calm Elixir available only for a select time period!
+                    </p>
+                </article>
+
+                <!-- Brew Your Own Potion -->
+                <article>
+                    <h3><a href="brew.html">Brew Your Potion</a></h3>
+                    <figure>
+                        <!-- Image Source: https://www.freepik.com/photos/cooking-pot -->
+                        <img src="images/cauldron-brewing.jpg" alt="Bubbling cauldron with ingredients">
+                        <figcaption>Create Your Own Magical Brew</figcaption>
+                    </figure>
+                    <p>
+                        Combine mystical ingredients in our interactive potion maker to craft your very own spellbinding
+                        concoction.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

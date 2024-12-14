@@ -1,0 +1,59 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14, 2024
+
+  This HTML file represents the Limited Edition Potions page for the "Mystic Brews" project. 
+  The page showcases exclusive, seasonal potions that are available for a limited time. 
+  Users can view the limited-time potions, complete with dynamic countdowns for their availability.
+
+  Key Features:
+  - Header with navigation links to other sections of the website.
+  - Dynamic content population using JavaScript (limited-edition.js).
+  - Highlighted seasonal potions, with stock availability indicators and countdown timers.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limited Edition Potions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts/limited-edition.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <!-- Main -->
+    <main>
+        <section class="head">
+            <h2>Seasonal Specials</h2>
+            <p>Only available for a limited time! Grab these potions before they're gone.</p>
+        </section>
+        <div class="row" id="limited-container">
+            <!-- Populated by limited-edition.js -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

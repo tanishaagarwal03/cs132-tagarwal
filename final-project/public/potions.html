@@ -1,0 +1,91 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14th, 2024
+
+  This is the "Potions" page for the "Mystic Brews" e-commerce website project. 
+  The page showcases a collection of pre-made potions with unique magical properties, 
+  allowing users to browse and filter potions based on price and stock availability. 
+
+  Features:
+  - Dynamic rendering of potions via JavaScript (potions.js).
+  - Filter functionality for price and stock status.
+  - Navigation links to other sections of the website.
+  
+  Future Improvements:
+  - Enhanced animations and styling for potion cards.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Brews - Potions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="potions-styles.css">
+    <script defer src="scripts/potions.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Potions for Every Mood, Spell, and Season</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Header Section -->
+        <section class="head">
+            <h2>Our Enchanted Collection</h2>
+            <p>Discover our collection of pre-made potions, each crafted to perfection with magical ingredients!</p>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filters">
+            <h3>Filter Potions</h3>
+            <p class="filter-instruction">Click the "Filter" button to apply your changes.</p>
+            <form id="filter-form">
+                <div class="filter-group">
+                    <!-- Price Filter -->
+                    <label for="price">
+                        Max Price:
+                        <input type="number" step="1" name="price" id="price" min="0">
+                    </label>
+
+                    <!-- In-Stock Checkbox -->
+                    <label for="in-stock">
+                        <input type="checkbox" name="in_stock" id="in-stock" value="true">
+                        In Stock
+                    </label>
+
+                    <!-- Filter Button -->
+                    <button type="submit">Filter</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Potions Container -->
+        <div class="row" id="potions-container">
+            <!-- Potions will be dynamically inserted here by potions.js -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>

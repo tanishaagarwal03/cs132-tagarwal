@@ -1,0 +1,57 @@
+<!--
+  Name: Tanisha Agarwal
+  Date: December 14th, 2024
+  
+  Description:
+  This is the potion detail page for the "Mystic Brews" website. It dynamically displays 
+  detailed information about a specific potion selected by the user from the potions list.
+
+  Features:
+  - Fetches and displays potion details such as name, price, effect, ingredients, and availability.
+  - Indicates if a potion is out of stock with a "NOT IN STOCK" message.
+  - Includes an "Add to Cart" button for in-stock potions, with interactive feedback on successful addition.
+  - Displays error messages in case of invalid operations (e.g., adding an out-of-stock potion).
+
+  Future Enhancements:
+  - Integrate user reviews and ratings for each potion.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Detail</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="potion-detail-styles.css">
+    <script defer src="scripts/potion-detail.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Mystic Brews</h1>
+        <p>Brewing Magic and Enchantment, One Potion at a Time</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="potions.html">Potions</a></li>
+                <li><a href="limited-edition.html">Limited Edition Potions</a></li>
+                <li><a href="brew.html">Brew Your Potion</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Message placeholder -->
+        <div id="message" class="hidden"></div>
+        <div id="potion-detail-container" class="potion-detail-container">
+            <!-- Dynamically populated by potion-detail.js -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Created by Tanisha Agarwal. Image Credits in Page Source.</p>
+    </footer>
+</body>
+
+</html>
