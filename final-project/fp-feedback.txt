@@ -1,0 +1,41 @@
+Please fill out the following and submit with your Final Project submission (added to help us know what to
+focus on when grading, what was intentionally incomplete, etc.):
+
+1. What is your estimated grade for the Final Project (roughly of 100)? For partner projects, do you think the
+workload distribution was fair?
+I completed both the back-end and front-end development independently, with some helpful guidance from El
+during office hours to review and improve my code. Based on the effort I put into meeting the specifications,
+implementing additional thoughtful details, and creating comprehensive APIDOC documentation, I would
+estimate a grade in the 90s. I believe the project fulfills all the requirements outlined in the spec, and I worked
+hard to ensure a polished final product.
+
+2. What is your estimated grade for the course (letter grade)? You can support your estimate with examples of
+demonstrated engagement in the course material, strengths (& weaknesses) over the term, and growth
+throughout the material (some assignment grading feedback was delayed, but we would like to know what
+resources you used to iterate on the material, such as lectures, OH, Discord, etc.)
+While I'm not entirely familiar with the grading system for letter grades at Caltech, I would expect a high grade
+overall based on my consistent engagement and effort throughout the course.
+- Strengths & Growth: I dedicated significant effort to every project, documentation, and code submission.
+At the start of the course, I struggled with using flex, needing guidance during OH. By the end, these
+concepts felt second nature, and I was able to independently implement layouts and designs. This growth
+has been immensely rewarding.
+- Engagement: I have tried to actively participate in OH, utilized lectures and cheat sheets as resources, and
+continuously iterated on feedback to improve my work. The projects, while challenging, allowed me to
+explore creative ideas and strengthen my skills. Building on the projects every week by adding different
+aspects to it was rewarding once I saw the finished product.
+
+3. To what extent would you like feedback in your project (e.g. thorough, particular areas of the project, or just a
+grade)?
+I would appreciate thorough feedback, particularly on areas where I could improve. Suggestions on how to
+strengthen specific aspects of my work (e.g., CSS or API design) would be great. Of course, I would also love to
+know my grade for the project!
+
+4. Anything else you would like El to know when grading?
+I think I have put in 3 all nighters into the project, worked the best I could and I don’t think I could have
+honestly done more. Managing both the back-end and front-end on my own was a challenging but rewarding
+experience. While I recognize that my CSS could be improved, I believe I did my best given the circumstances
+and the workload.
+
+5. Are you open to sharing your project/reflection for future terms? If so, would you like named credit or
+anonymous?
+Yes, I’m open to sharing my project and reflection. If used, I would prefer named credit.
